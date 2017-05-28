@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 新特性</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+
+
+		}
+		body{
+			font-family: "STKaiti";
+		}
+		div{
+			margin: 0px auto;
+		}
+		div{
+			width: 300px;
+			text-align: center;
+		}
+		table{
+			width: 100%
+		}
+		th{
+			background-color: black;
+			color: white;
+		}
+		table tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){
+			color: red;
+		}
+		table tr:nth-child(odd){
+			background: #ccc;
+		}
+		input{
+			width: 100px;
+			height: 15px;
+			transition: 1s;
+			border-radius: 3px;
+			border:1px #ccc solid;
+		}
+		input:focus{
+			transform: scale(2,1);
+			-wibekit-transform: scale(2,1);
+			transition: 1s;
+			border-color: rgba(82,168,236,.8);
+			outline: 0;
+			box-shadow: 0 0 8px rgba(82,168,236,.6);
+		}
+		.div3{
+			margin-top: 50px;
+			width: 300px;
+			height: 200px;
+			border:1px red solid;
+			position: relative;
+			overflow: hidden;
+		}
+		.ICON{
+			position: absolute;
+			right: 0;
+			bottom: 3px;
+			width: 90px;
+			height: 20px;
+			padding: 0;
+		}
+		.icon{
+			border:1px red solid;
+			width:20px;
+			height: 20px;
+			padding: 1px;
+			text-align: center; 
+			float: left;
+			margin-left: 5px;
+			line-height: 15px;
+			text-decoration: none;
+		}
+		.sliders{
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			animation: 2s init linear;
+		}
+		.sliders li{
+			display: block;
+			position: absolute;
+			left: -300px;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			animation: 2s out linear;
+		}
+
+		#slider_1{
+			background: green;
+		}
+		#slider_2{
+			background: blue;
+		}
+		#slider_3{
+			background: yellow;
+		}
+		.sliders li:target {
+			  left: 0%;
+			  animation: 2s in linear;
+			}
+
+		@keyframes in{
+			from{
+				left: 100%;
+			}
+			to{
+				left: 0;
+			}
+		}
+		@keyframes out{
+			from{
+				left: 0;
+			}
+			to{
+				left: -100%;
+			}
+		}
+		@keyframes init{
+			from{
+				left: -100%;
+			}
+			to{
+				left: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<table>
+			<tr>
+				<th>排名</th>
+				<th>网站</th>
+				<th>热度</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>百度前端技术学院</td>
+				<td>130000</td>
+			</tr>
+		</table>
+	</div>
+	<div class="div2">
+		<input type="text" name="">
+	</div>
+	<div class="div3">
+			<ul class="sliders">
+				<li  id="slider_1"></li>
+				<li  id="slider_2"></li>
+				<li  id="slider_3"></li>
+			</ul>
+			<div class="ICON">
+					<a class="icon" href="#slider_1">1</a>
+					<a class="icon" href="#slider_2">2</a>
+					<a class="icon" href="#slider_3">3</a>
+			</div>
+
+	</div>
+</body>
+</html>

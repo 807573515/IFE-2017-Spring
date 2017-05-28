@@ -14,3 +14,9 @@ task4 代码地址：https://github.com/807573515/IFE-2017-Spring/blob/master/ta
 
 task8 demo地址：https://807573515.github.io/IFE-2017-Spring/task_8.html  
 task8 代码地址：https://github.com/807573515/IFE-2017-Spring/blob/master/task_8.html  
+
+task10 demo地址：https://807573515.github.io/IFE-2017-Spring/task_10.html  
+task10 代码地址：https://github.com/807573515/IFE-2017-Spring/blob/master/task_10.html  
+
+task12 demo地址：https://807573515.github.io/IFE-2017-Spring/task_12.html  
+task12 代码地址：https://github.com/807573515/IFE-2017-Spring/blob/master/task_12.html  
